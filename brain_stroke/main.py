@@ -281,7 +281,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('https://github.com/gehado2002/Brain_Stroke/blob/main/brain_stroke/healthcare-dataset-stroke-data.csv')
+        df = pd.read_csv('brain_stroke/healthcare-dataset-stroke-data.csv')
         
         # Data cleaning
         numerical_cols = df.select_dtypes(include=[np.number]).columns
@@ -394,5 +394,6 @@ elif st.session_state.current_page == "🎯 Findings":
 elif st.session_state.current_page == "🤖 Prediction":
 
     show_prediction_page()
+
 
 

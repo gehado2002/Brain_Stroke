@@ -281,7 +281,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv(r'healthcare-dataset-stroke-data.csv')
+        df = pd.read_csv(r'https://raw.githubusercontent.com/username/repo/main/healthcare-dataset-stroke-data.csv')
         
         # Data cleaning
         numerical_cols = df.select_dtypes(include=[np.number]).columns
@@ -392,4 +392,5 @@ elif st.session_state.current_page == "🎯 Findings":
     show_findings_page(df)
 
 elif st.session_state.current_page == "🤖 Prediction":
+
     show_prediction_page()

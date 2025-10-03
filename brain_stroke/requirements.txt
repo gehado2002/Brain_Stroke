@@ -5,4 +5,5 @@ plotly>=5.13.0
 scikit-learn>=1.2.0
 matplotlib>=3.5.0
 seaborn>=0.12.0
+statsmodels
 joblib>=1.2.0
